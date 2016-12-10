@@ -150,8 +150,48 @@ and open the template in the editor.
             </div>
         </footer>
         
-        <script src="js/jquery.min.js"></script>
+       <span class="ir-arriba glyphicon glyphicon-chevron-up"></span>
+        
+        
+    <script src="js/jquery.min.js"></script>
      <script src="js/bootstrap.min.js"></script>
+     
+     <script type='text/javascript' >
+    $.expr[':'].icontains = function(obj, index, meta, stack){
+    return (obj.textContent || obj.innerText || jQuery(obj).text() || '').toLowerCase().indexOf(meta[3].toLowerCase()) >= 0;
+    };
+    $(document).ready(function(){   
+        $('#buscador').keyup(function(){
+                     buscar = $(this).val();
+                     $('#lista ul').removeClass('resaltar');
+                            if(jQuery.trim(buscar) != ''){
+                               $("#lista ul:icontains('" + buscar + "')").addClass('resaltar');
+                            }
+            });
+    });   
+ </script> 
+     
+     
+     <script type="text/javascript">
+   
+     $(document).ready(function(){
+ 
+	$('.ir-arriba').click(function(){
+		$('body, html').animate({
+			scrollTop: '0px'
+		}, 300);
+	});
+ 
+	$(window).scroll(function(){
+		if( $(this).scrollTop() > 0 ){
+			$('.ir-arriba').slideDown(300);
+		} else {
+			$('.ir-arriba').slideUp(300);
+		}
+	});
+ 
+});
+  </script>   
      
         
     </body>

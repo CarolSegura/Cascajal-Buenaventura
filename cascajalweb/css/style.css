@@ -1,0 +1,84 @@
+
+/* 
+    Created on : 21/09/2016, 10:53:40 PM
+    Author     : Carol Segura
+*/
+body
+{
+    background-color:#009933;
+    color: #ffffff !important;
+}
+#lang-selector
+{
+    background-color:yellowgreen;
+}
+.navbar
+{
+    background-color:white;
+    
+}
+
+footer{
+    background-color:#333333; 
+    color: #ffffff !important;
+}
+
+img
+{
+    width: 100%
+  
+}
+.LOGO
+{
+    line-height: 0px;
+  
+}
+
+.navbar-brand{
+    width: 120px;
+    height: 50px;
+    
+  
+}
+.jumbotron
+{
+    background-color:#cccccc;
+    color: #000000 !important;
+}
+
+#lang-selector
+{
+    background-color:#00cc66;
+}
+
+
+.active{
+    background-color:#00cc66;
+    
+}
+.drheladio{
+    width: 20% 
+    
+}
+
+.otromb1{
+    width: 50% 
+    
+}
+
+.uo{
+    width: 80px;
+    
+}
+.ir-arriba {
+	display:none;
+	padding:20px;
+	background:yellow;
+	font-size:20px;
+	color:yellowgreen;
+	cursor:pointer;
+	position: fixed;
+	right:20px;
+}
+
+.resaltar{background-color:yellow;}
